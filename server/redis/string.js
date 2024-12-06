@@ -11,6 +11,13 @@ async function init() {
 
 init()  
 
+// to intialize redis - docker exec -it container-id bash
+// then enter redis-cli
+
+
+// for postgres sql - open terminal in the docker file 
+// docker-compose up -d
+
 
 // to get all the keys name starting with user - keys user:*   
 // result - user:1
