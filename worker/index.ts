@@ -5,7 +5,11 @@ const client = createClient()
 
 
 async function main() {
-    await client.connect();
+    await client.connect( 
+        // we could pass the url here also
+        // like if the redis is some aws or (like mongodb atlas) 
+        // then put username , password from the generated string here to connect to that. 
+    );
     while(1){
         const response = await client.brPop('submission',0);
         console.log(response)
